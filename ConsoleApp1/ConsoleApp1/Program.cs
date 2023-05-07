@@ -1,42 +1,71 @@
-﻿string name = "Ewa";
-bool isWoman = false;
-isWoman = true;
-int age = 17;
-int age2 = 33;
+﻿using System.Diagnostics.Metrics;
 
+int number = 1997;
+string numberAsString = number.ToString();
+char[] letters = numberAsString.ToCharArray();
 
+int counter0 = 0;
+int counter1 = 0;
+int counter2 = 0;
+int counter3 = 0;
+int counter4 = 0;
+int counter5 = 0;
+int counter6 = 0;
+int counter7 = 0;
+int counter8 = 0;
+int counter9 = 0;
 
-if (isWoman == true)
+foreach (char sign in letters)
 {
-    if (age < 30)
+    if (sign == '0')
     {
-        Console.WriteLine("Kobieta poniżej 30 lat");
+        counter0++;
     }
-    else
+    if (sign == '1')
     {
-        Console.WriteLine("Kobieta w wieku 30 lat lub starsza");
+        counter1++; 
+    }
+    if (sign == '2')
+    {
+        counter2++; 
+    }
+    if (sign == '3')
+    {
+        counter3++;
+    }
+    if(sign == '4')
+    {
+        counter4++;
+    }
+    if (sign == '5')
+    {
+        counter5++;
+    }
+    if (sign == '6')
+    {
+        counter6++;
+    }
+    if (sign == '7')
+    {
+        counter7++;
+    }
+    if (sign == '8')
+    {
+        counter8++;
+    }
+    if (sign == '9') 
+    {
+        counter9++; 
     }
 }
 
-
-if (name == "Ewa" && age2 == 33)
-{
-    Console.WriteLine("Ewa, lat 33");
-}
-else
-{
-    Console.WriteLine("To nie jest Ewa, lat 33");
-}
-
-
-if (isWoman != false)
-{
-    if (age >= 18)
-    {
-        Console.WriteLine("Pełnoletni mężczyzna");
-    }
-    else
-    {
-        Console.WriteLine("Niepełnoletni Mężczyzna");
-    }
-}
+Console.WriteLine("0 => " + counter0);
+Console.WriteLine("1 => " + counter1);
+Console.WriteLine("2 => " + counter2);
+Console.WriteLine("3 => " + counter3);
+Console.WriteLine("4 => " + counter4);
+Console.WriteLine("5 => " + counter5);
+Console.WriteLine("6 => " + counter6);
+Console.WriteLine("7 => " + counter7);
+Console.WriteLine("8 => " + counter8);
+Console.WriteLine("9 => " + counter9);
